@@ -33,7 +33,7 @@ print(f"Intent: {intent}")
 # ===== ROUTING TO CORRECT AGENT =====
 if format_type == 'Email':
     result = email_agent.extract_email_info(content)
-    print("\n📬 Email Agent Output:")
+    print("\n Email Agent Output:")
     for k, v in result.items():
         print(f"{k}: {v}")
 
@@ -47,7 +47,7 @@ if format_type == 'Email':
 
 elif format_type == 'JSON':
     result = json_agent.extract_and_validate(content)
-    print("\n🗂 JSON Agent Output:")
+    print("\n JSON Agent Output:")
     for k, v in result.items():
         print(f"{k}: {v}")
 
@@ -62,7 +62,7 @@ elif format_type == 'JSON':
 elif format_type == 'PDF':
     pdf_agent = PDFAgent()
     result = pdf_agent.extract_info(input_file)  # Pass filename, PDF agent handles reading
-    print("\n📄 PDF Agent Output:")
+    print("\n PDF Agent Output:")
     for k, v in result.items():
         print(f"{k}: {v}")
 
@@ -75,6 +75,6 @@ elif format_type == 'PDF':
     )
 
 # ===== SHOW MEMORY =====
-print("\n🧠 Shared Memory Log:")
+print("\n Shared Memory Log:")
 for entry in memory.fetch_all():
     print(entry)
