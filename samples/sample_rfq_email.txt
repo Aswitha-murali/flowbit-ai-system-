@@ -1,0 +1,9 @@
+From: buyer@client.com
+Subject: Urgent RFQ request
+
+Hello Team,
+
+Please provide a quote for the following items urgently.
+
+Thanks,
+Client Team

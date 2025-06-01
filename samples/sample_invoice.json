@@ -1,0 +1,14 @@
+{
+    "invoice_id": "INV12345",
+    "customer": {
+      "name": "John Doe",
+      "email": "john@example.com"
+    },
+    "items": [
+      {"item": "Widget A", "quantity": 3, "price": 19.99},
+      {"item": "Widget B", "quantity": 2, "price": 29.99}
+    ],
+    "total": 119.95,
+    "date": "2025-05-28"
+  }
+  
